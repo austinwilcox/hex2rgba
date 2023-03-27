@@ -1,6 +1,6 @@
-local hex2rgba = {}
+local M = {}
 
-function hex2rgba.hex2rgb()
+function M.hex2rgb()
   local r,c = unpack(vim.api.nvim_win_get_cursor(0))
   local lines = vim.api.nvim_buf_get_lines(0,r-1,r,false)
   local line = unpack(lines)
@@ -35,3 +35,5 @@ function getrgbafromhex(hex)
 
   return rgba
 end
+
+return M

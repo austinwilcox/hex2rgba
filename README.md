@@ -18,7 +18,7 @@ local map = vim.api.nvim_set_keymap
 map('n', '<leader>cs', ':lua require("hex2rgba").hex2rgba()<cr>', { noremap = true })
 ```
 
-Now with the keybinding of <leader>cs hex2rgba will find the first instance of a hex color value on the current line, and replace that with the correct rgba value.
+Now with the keybinding of ```<leader>cs``` hex2rgba will find the first instance of a hex color value on the current line, and replace that with the correct rgba value.
 If you execute the command again, it will look for another instance of a hex value. This will work with hex sizes of 3 or 6.
 
 If you have any questions please feel free to reach out, or submit an issue.
